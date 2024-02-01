@@ -6,9 +6,9 @@
 </head>
 <body>
 <h1>Form</h1>
-<form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+<form action="#" th:action="@{/user}" th:object="${user}" method="post">
     <p>Id: <input type="text" th:field="*{id}" /></p>
-    <p>Message: <input type="text" th:field="*{content}" /></p>
+    <p>Hi! Enter your Name: <input type="text" th:field="*{username}" /></p>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 </form>
 </body>

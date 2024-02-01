@@ -1,9 +1,9 @@
 package com.example.springboot.rdsdemo;
 
-public class Greeting {
+public class User {
 
     private long id;
-    private String content;
+    private String username;
 
     public long getId() {
         return id;
@@ -13,12 +13,12 @@ public class Greeting {
         this.id = id;
     }
 
-    public String getContent() {
-        return content;
+    public String getUsername() {
+        return username;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
 }
