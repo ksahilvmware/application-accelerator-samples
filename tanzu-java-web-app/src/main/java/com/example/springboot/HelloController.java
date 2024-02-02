@@ -8,7 +8,11 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot + Tanzu!";
+		String password = System.getenv("RDS_PASSWORD");
+		String path = System.getenv("PATH");
+		return "Greetings from Spring Boot + Tanzu!\n" +
+				"Your Password is " + password +
+				"\n Your system path is "+ path;
 	}
 
 }
