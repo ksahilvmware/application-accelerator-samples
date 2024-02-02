@@ -1,6 +1,16 @@
 spring:
   application:
     name: tanzu-java-web-app
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST}:5432/postgres
+    username: masteruser
+    password: ${POSTGRES_PASSWORD}
+  server:
+    servlet:
+      context-path: /user
+  jpa:
+    hibernate:
+      ddl-auto: create
 management:
   endpoints:
     web:

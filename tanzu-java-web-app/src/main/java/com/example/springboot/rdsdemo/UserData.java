@@ -1,7 +1,14 @@
 package com.example.springboot.rdsdemo;
 
-public class User {
+import javax.persistence.*;
 
+
+@Entity
+@Table(name = "user_data")
+public class UserData {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String username;
 

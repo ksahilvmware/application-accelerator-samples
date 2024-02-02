@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Handling Form Submission</title>
+    <title>TMS Platform Services</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<h1>Form</h1>
+<h1>Welcome<h3>
+    <h3> this form is backed by AWS RDS (Postgres)</h3>
 <form action="#" th:action="@{/user}" th:object="${user}" method="post">
-    <p>Id: <input type="text" th:field="*{id}" /></p>
-    <p>Hi! Enter your Name: <input type="text" th:field="*{username}" /></p>
+    <p>Hi! Please Enter your name: <input type="text" th:field="*{username}" /></p>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 </form>
 </body>
