@@ -10,7 +10,7 @@ spring:
       context-path: /user
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
 management:
   endpoints:
     web:
