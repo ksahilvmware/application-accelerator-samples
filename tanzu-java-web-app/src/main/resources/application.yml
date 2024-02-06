@@ -5,9 +5,6 @@ spring:
     url: jdbc:postgresql://${POSTGRES_HOST}/postgres
     username: masteruser
     password: ${POSTGRES_PASSWORD}
-  server:
-    servlet:
-      context-path: /user
   jpa:
     hibernate:
       ddl-auto: update

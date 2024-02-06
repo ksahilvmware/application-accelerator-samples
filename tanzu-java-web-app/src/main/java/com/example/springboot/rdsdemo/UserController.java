@@ -16,7 +16,7 @@ public class UserController {
         this.userDataRepository = userDataRepository;
     }
 
-    @GetMapping("/user")
+    @GetMapping("/")
     public String userForm(Model model) {
         model.addAttribute("user", new UserData());
         return "user";
