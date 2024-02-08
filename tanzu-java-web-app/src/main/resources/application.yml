@@ -3,7 +3,7 @@ spring:
     name: tanzu-java-web-app
   datasource:
     url: jdbc:postgresql://${POSTGRES_HOST}/postgres
-    username: ${POSTGRES_HOST}
+    username: ${POSTGRES_USER}
     password: ${POSTGRES_PASSWORD}
   jpa:
     hibernate:
