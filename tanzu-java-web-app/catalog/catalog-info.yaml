@@ -10,7 +10,7 @@ metadata:
     - web
     - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app-with-rds'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app-with-bitnami-rds'
 spec:
   type: service
   lifecycle: experimental

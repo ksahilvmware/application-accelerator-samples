@@ -73,7 +73,7 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: tanzu-java-web-app-with-rds
+        - text: tanzu-java-web-app-with-bitnami-rds
           with: "#artifactId.toLowerCase()"
       - condition: "#buildTool == 'gradle' && #ide == 'intellij'"
         type: RewritePath
@@ -89,7 +89,7 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: ": tanzu-java-web-app-with-rds"
+        - text: ": tanzu-java-web-app-with-bitnami-rds"
           with: "': ' + #artifactId.toLowerCase()"
       - merge:
         - type: InvokeFragment
@@ -101,7 +101,7 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: ": tanzu-java-web-app-with-rds"
+        - text: ": tanzu-java-web-app-with-bitnami-rds"
           with: "': ' + #artifactId.toLowerCase()"
       - merge:
         - type: InvokeFragment
@@ -112,7 +112,7 @@ engine:
       chain:
       - type: ReplaceText
         substitutions:
-        - text: tanzu-java-web-app-with-rds
+        - text: tanzu-java-web-app-with-bitnami-rds
           with: "#artifactId"
     - name: README
       type: Combo
@@ -122,14 +122,14 @@ engine:
         chain:
         - type: ReplaceText
           substitutions:
-          - text: tanzu-java-web-app-with-rds
+          - text: tanzu-java-web-app-with-bitnami-rds
             with: "#artifactId"
       - include: [ "README-native.md" ]
         condition: "#nativeBuild"
         chain:
         - type: ReplaceText
           substitutions:
-          - text: tanzu-java-web-app-with-rds
+          - text: tanzu-java-web-app-with-bitnami-rds
             with: "#artifactId"
         - type: RewritePath
           rewriteTo: "'README.md'"
@@ -161,7 +161,7 @@ engine:
       - include: [ "settings.gradle" ]
       - type: ReplaceText
         substitutions:
-          - text: 'tanzu-java-web-app-with-rds'
+          - text: 'tanzu-java-web-app-with-bitnami-rds'
             with: "#projectName"
     - type: InvokeFragment
       reference: build-wrapper-gradle
